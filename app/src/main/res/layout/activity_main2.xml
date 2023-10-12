@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mi app"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/implicitos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/explicitos">
+
+        <TextView
+            android:id="@+id/explicitos_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intent Explicitos"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/explicitos_text"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Ajustes"
+            android:textSize="20sp"
+            android:id="@+id/intentEX1"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/intentEX1"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Youtube como dormir"
+            android:textSize="20sp"
+            android:id="@+id/intentEX2"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/intentEX2"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Tomar fotos"
+            android:textSize="20sp"
+            android:id="@+id/intentEX3"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/intentEX3"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Facebook"
+            android:textSize="20sp"
+            android:id="@+id/intentEX4"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/explicitos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/implicitos">
+
+        <TextView
+            android:id="@+id/implicitos_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intent Explicitos"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/implicitos_text"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Exitos de chalino"
+            android:textSize="20sp"
+            android:id="@+id/intentIM1"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/intentIM1"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Contactos"
+            android:textSize="20sp"
+            android:id="@+id/intentIM2"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/intentIM2"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Instagram"
+            android:textSize="20sp"
+            android:id="@+id/intentIM3"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/intentIM3"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Compartir gatitos"
+            android:textSize="20sp"
+            android:id="@+id/intentIM4"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
